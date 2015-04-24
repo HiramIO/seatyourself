@@ -1,9 +1,5 @@
 Rails.application.routes.draw do
-  get 'sessions/new'
 
-  get 'sessions/create'
-
-  get 'sessions/destroy'
 
   root 'restaurants#index'
 
@@ -14,4 +10,6 @@ Rails.application.routes.draw do
   end
 
   resources :reservations
+
+  resources :sessions
 end
