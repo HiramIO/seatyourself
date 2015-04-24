@@ -7,7 +7,7 @@ class UsersController < ApplicationController
   def create
     @user = User.new
       if @user.save
-        redirect_to restaurants_path
+        redirect_to restaurants_path, notice: "Signed up! WOo!~"
       else
         render :new
       end
